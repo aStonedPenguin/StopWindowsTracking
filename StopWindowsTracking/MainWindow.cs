@@ -98,10 +98,10 @@ namespace StopWindowsTracking
 
         private void SelectAll2_CheckedChanged(object sender, EventArgs e)
         {
-            SelectAll2.Text = SelectAll1.Checked ? "Deselect all" : "Select all";
+            SelectAll2.Text = SelectAll2.Checked ? "Deselect all" : "Select all";
 
             foreach (ListViewItem v in MiscList.Items)
-                v.Checked = SelectAll1.Checked;
+                v.Checked = SelectAll2.Checked;
         }
 
         private void run_Click(object sender, EventArgs e)
